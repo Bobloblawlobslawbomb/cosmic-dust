@@ -3,4 +3,8 @@ export default class Person {
     this.name = "unnamedPerson"
     this.age = 1
   }
+
+  ageMercury(/*personage*/) {
+  //this.age = (personage * .24);
+  }
 }

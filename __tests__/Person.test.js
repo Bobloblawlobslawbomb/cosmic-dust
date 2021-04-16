@@ -13,7 +13,7 @@ describe('Person', () => {
   });
 
   test('it should give the age of the person in "Mecury years"', () => {
-  person.age = person.ageMecury(person.age);
+ // person.age = person.ageMecury(person.age);
   expect(person.age).toEqual(9.84);
   });
 });
