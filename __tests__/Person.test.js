@@ -1,4 +1,4 @@
-import Person from './src/Person.js';
+import Person from './../src/Person.js';
 
 describe('Person', () => {
   let person;
