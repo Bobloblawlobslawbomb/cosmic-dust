@@ -11,6 +11,6 @@ export default class Person {
   }
 
   ageMercury() {
-  //this.ageMercury = this.age * .24;
+  this.ageMercury = this.age * .24;
   }
 }
