@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Template Environment',
+      title: 'Cosmic Dust',
       template: './src/index.html',
       inject: 'body'
     })
