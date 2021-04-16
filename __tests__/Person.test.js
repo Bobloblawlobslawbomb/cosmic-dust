@@ -24,7 +24,7 @@ test('it should multiply the persons age by .24 to give the persons age in "Merc
 
   const person = new Person;
   person.age = 41;
-  person.age = person.ageMercury();
-  expect(person.age).toEqual(9.84);
+  console.log(person);
+  expect(person.ageMercury).toEqual(9.84);
   });
 });
