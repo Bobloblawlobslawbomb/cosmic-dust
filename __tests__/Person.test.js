@@ -14,8 +14,6 @@ test('this is a "test-test" to see if I have everything lined up correctly. It s
   });
 
 test('it should multiply the persons age by .24 to give the persons age in "Mercury years"', () => {
-  const person = new Person;
-  person.age = 41;
   person.ageMercury = person.ageMercury();
   expect(person.ageMercury).toEqual(9.84);
   });
