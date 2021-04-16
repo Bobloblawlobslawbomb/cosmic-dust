@@ -8,12 +8,12 @@ describe('Person', () => {
   });
 
   test('it should give the person an age of 45', () => {
-  person.name = 45;
-  expect(person.name).toEqual(45);
+  person.age = 45;
+  expect(person.age).toEqual(45);
   });
 
   test('it should give the age of the person in "Mecury years"', () => {
   person.age = person.ageMecury(person.age);
-  expect(person.age).toEqual(person.ageMecury(person.age));
+  expect(person.age).toEqual(9.84);
   });
 });
