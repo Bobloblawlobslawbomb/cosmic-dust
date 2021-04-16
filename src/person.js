@@ -4,8 +4,8 @@ export default class Person {
     this.age = age
   }
 
-  ageMercury(personage) {
-  //this.age = personage * .24;
+  ageMercury() {
+  this.age = this.age * .24;
   //parseInt(personage * .24);
   }
 }
