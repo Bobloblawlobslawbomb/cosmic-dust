@@ -1,10 +1,11 @@
 export default class Person {
-  constructor (){
-    this.name = "unnamedPerson"
-    this.age = 1
+  constructor (name, age){
+    this.name = name
+    this.age = age
   }
 
-  ageMercury(/*personage*/) {
-  //this.age = (personage * .24);
+  ageMercury(personage) {
+  //this.age = personage * .24;
+  //parseInt(personage * .24);
   }
 }
