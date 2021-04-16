@@ -4,6 +4,7 @@ describe('Person', () => {
   let person;
   beforeEach(() => {
   person = new Person;
+  person.name = 'testPerson'
   person.age = 41;
   });
 
@@ -13,7 +14,8 @@ describe('Person', () => {
   });
 
   test('it should give the age of the person in "Mecury years"', () => {
-  person.age = person.ageMercury(person.age);
+  console.log(person.age);
+  console.log((person.age*.24));//what i want .ageMerc todo
   expect(person.age).toEqual(9.84);
   });
 });
