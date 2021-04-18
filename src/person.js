@@ -1,11 +1,15 @@
-export default class Person {
-  constructor (name, age){
-    this.name = name
-    this.age = age
-  }
+export default function Person(name,age) {
+  this.name = name;
+  this.age = age;
+  this.avgLife = 100;
+  this.numOfSnakes = 0;
+  this.mercAge = 0;
+  this.venAge = 0;
+  this.marsAge = 0;
+  this.jupAge = 0;
+  this.lifeExpect = 0;
+}
 
-  ageMercury(personage) {
-  //this.age = personage * .24;
-  //parseInt(personage * .24);
-  }
+Person.prototype.ageMercury = function(){
+ 
 }

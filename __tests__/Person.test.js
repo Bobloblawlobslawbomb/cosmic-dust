@@ -1,21 +1,24 @@
 import Person from './../src/Person.js';
 
 describe('Person', () => {
-  let person;
-  beforeEach(() => {
-    person = new Person;
-    person.name = 'testPerson'
-    person.age = 41;
+  let testPerson;
+  let personOne;
+  beforeEach(() =>{
+    personOne = new Person('Person One', 41);
+  })
+
+  test('it should correctly create a test person object with a new name and age', () => {
+    testPerson = new Person('New Name', 35);
+    expect(testPerson.name).toEqual("New Name");
   });
 
-test('this is a "test-test" to see if I have everything lined up correctly. It should give the person an age of 45', () => {
-  person.age = 45;
-  expect(person.age).toEqual(45);
+  test('it should correctly create a test person object with a new name and age', () => {
+    testPerson = new Person('New Name', 35);
+    expect(testPerson.age).toEqual(35);
   });
 
-test('it should give the age of the person in "Mecury years"', () => {
-  console.log(person.age);
-  console.log((person.age*.24));//what i want .ageMerc todo
-  expect(person.age).toEqual(9.84);
+  test('it should correctly determine personOnes "ageMercury" (age*.24)', () => {
+    expect(personOne.ageMercury()).toBeCloseTo(9.84);
   });
+  
 });
