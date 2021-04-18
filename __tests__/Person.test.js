@@ -37,6 +37,12 @@ describe('Person', () => {
   test('it should correctly dertermine a personOnes "ageJupiter" (age * 11.86)', () => {
     expect(personOne.ageJupiter()).toBeCloseTo(486.26);
   });
+
+  test('it should determine a persons "lifeExpectancy" ((numOfSnakes * .2) * avgLife)', () => {
+    personOne.numOfSnakes = 3;
+    expect(personOne.lifeExpectancy()).toBeCloseTo(60);
+  });
+  
   
   
 });
