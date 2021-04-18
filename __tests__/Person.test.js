@@ -22,8 +22,8 @@ describe('Person', () => {
   });
 
   test('it should save a persons "ageMercury" as their mercAge property', () => {
+    
     expect(personOne.mercAge).toEqual(personOne.ageMercury());
   });
-  
   
 });
