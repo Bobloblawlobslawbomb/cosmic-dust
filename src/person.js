@@ -10,18 +10,22 @@ export default function Person(name,age) {
   this.lifeExpect = 0;
 }
 
-Person.prototype.ageMercury = function(){
+Person.prototype.ageMercury = function() {
   this.mercAge = (this.age * .24);
   //return this.age * .24;
   return this.mercAge;
 }
 
-Person.prototype.ageVenus = function(){
+Person.prototype.ageVenus = function() {
   this.venAge = (this.age * .62);
   return this.venAge;
 }
 
-Person.prototype.ageMars = function(){
+Person.prototype.ageMars = function() {
   this.marsAge = (this.age * 1.88);
   return this.marsAge;
+}
+
+Person.prototype.ageJupiter = function() {
+
 }

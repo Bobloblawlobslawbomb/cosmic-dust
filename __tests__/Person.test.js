@@ -34,6 +34,9 @@ describe('Person', () => {
     expect(personOne.ageMars()).toBeCloseTo(77.08);
   });
   
+  test('it should correctly dertermine a personOnes "ageJupiter" (age * 11.86)', () => {
+    expect(personOne.ageJupiter()).toBeCloseTo(486.26);
+  });
   
   
 });
