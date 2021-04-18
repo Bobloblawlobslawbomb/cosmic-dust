@@ -37,6 +37,7 @@ Person.prototype.lifeExpectancy = function() {
 }
 
 Person.prototype.timeLeft = function() {
+  //why is this not a function?
   // this.timeLeft = (this.lifeExpect - this.age);
   // return this.timeLeft;
 }

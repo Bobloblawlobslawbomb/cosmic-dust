@@ -22,7 +22,7 @@ describe('Person', () => {
   });
 
   test('it should save a persons "ageMercury" as their mercAge property', () => {
-
+      //does this fall out of scope because person.js is not using class syntax? Or another reason?
       expect(personOne.mercAge).toEqual(personOne.ageMercury());
   });
 
@@ -44,6 +44,7 @@ describe('Person', () => {
   });
 
   test('it should calculate personOnes "timeLeft" (lifeExpect - age)', () => {
+      //why is this not a function?
       expect(personOne.timeLeft()).toBeCloseTo(59);
   });
   
