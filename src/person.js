@@ -11,5 +11,5 @@ export default function Person(name,age) {
 }
 
 Person.prototype.ageMercury = function(){
- 
+ return this.age * .24;
 }
