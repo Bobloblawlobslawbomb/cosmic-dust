@@ -20,5 +20,10 @@ describe('Person', () => {
   test('it should correctly determine personOnes "ageMercury" (age*.24)', () => {
     expect(personOne.ageMercury()).toBeCloseTo(9.84);
   });
+
+  test('it should save a persons "ageMercury" as their mercAge property', () => {
+    expect(personOne.mercAge).toEqual(personOne.ageMercury());
+  });
+  
   
 });
