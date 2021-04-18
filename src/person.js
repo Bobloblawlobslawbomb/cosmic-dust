@@ -7,7 +7,8 @@ export default function Person(name,age) {
   this.venAge = 0;
   this.marsAge = 0;
   this.jupAge = 0;
-  this.lifeExpect = 0;
+  this.lifeExpect = 100;
+  this.timeLeft = 100;
 }
 
 Person.prototype.ageMercury = function() {
@@ -30,7 +31,12 @@ Person.prototype.ageJupiter = function() {
   return this.jupAge;
 }
 
-Person.prototype.lifeExpectancy = function(){
+Person.prototype.lifeExpectancy = function() {
   this.lifeExpect = ((this.numOfSnakes * .2) * this.avgLife)
   return this.lifeExpect;
+}
+
+Person.prototype.timeLeft = function() {
+  // this.timeLeft = (this.lifeExpect - this.age);
+  // return this.timeLeft;
 }
