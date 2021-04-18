@@ -29,6 +29,11 @@ describe('Person', () => {
   test('it should correctly dertermine a personOnes "ageVenus" (age * .62)', () => {
     expect(personOne.ageVenus()).toBeCloseTo(25.42);
   });
+
+  test('it should correctly dertermine a personOnes "ageMars" (age * 1.88)', () => {
+    expect(personOne.ageMars()).toBeCloseTo(77.08);
+  });
+  
   
   
 });

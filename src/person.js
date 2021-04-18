@@ -17,5 +17,10 @@ Person.prototype.ageMercury = function(){
 }
 
 Person.prototype.ageVenus = function(){
-  
+  this.venAge = (this.age * .62);
+  return this.venAge;
+}
+
+Person.prototype.ageMars = function(){
+
 }
