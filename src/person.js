@@ -22,5 +22,6 @@ Person.prototype.ageVenus = function(){
 }
 
 Person.prototype.ageMars = function(){
-
+  this.marsAge = (this.age * 1.88);
+  return this.marsAge;
 }
