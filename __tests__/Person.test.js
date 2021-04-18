@@ -17,13 +17,18 @@ describe('Person', () => {
     expect(testPerson.age).toEqual(35);
   });
 
-  test('it should correctly determine personOnes "ageMercury" (age*.24)', () => {
+  test('it should correctly determine personOnes "ageMercury" (age * .24)', () => {
     expect(personOne.ageMercury()).toBeCloseTo(9.84);
   });
 
   test('it should save a persons "ageMercury" as their mercAge property', () => {
-    
+
     expect(personOne.mercAge).toEqual(personOne.ageMercury());
   });
+
+  test('it should correctly dertermine a personOnes "ageVenus" (age * .62)', () => {
+    expect(personOne.ageVenus()).toBeCloseTo(25.42);
+  });
+  
   
 });
