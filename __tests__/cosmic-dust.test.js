@@ -1,19 +1,19 @@
-import Person from './../src/Person.js';
+import Person from './../src/cosmic-dust.js';
 
 describe('Person', () => {
   let testPerson;
   let personOne;
   beforeEach(() =>{
-    personOne = new Person('Person One', 41);
+    personOne = new Person('Person One', 41, 1);
   })
 
   test('it should correctly create a test person object with a new name and age', () => {
-      testPerson = new Person('New Name', 35);
+      testPerson = new Person('New Name', 35, 1);
       expect(testPerson.name).toEqual("New Name");
   });
 
   test('it should correctly create a test person object with a new name and age', () => {
-      testPerson = new Person('New Name', 35);
+      testPerson = new Person('New Name', 35, 1);
       expect(testPerson.age).toEqual(35);
   });
 
