@@ -33,7 +33,10 @@ ___
 5) To run tests, navigate to 'cosmic-dust/' in your terminal and run the command "npm run test"
 
 ## Known Bugs
-* Program currently has no way to input 'Name, Age, or Number of Snakes'
+* Program currently has no way to input 'Name, _Age_, or _Number of Snakes_'
+* Program presently includes commented code, as a 'living' notebook for further guidance
+* Program currently does not return users "number of years past life expectancy"
+  --planned as part of WIP timeLeft function
 * Person.js file is not written in class syntax
 * Program has 2 failing tests:
 >1) _'it should save a persons "ageMercury" as their mercAge property'_
