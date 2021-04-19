@@ -30,6 +30,12 @@ describe('Person', () => {
         expect(personOne.ageVenus(personOne.age)).toBeCloseTo(25.42);
     });
 
+    test('it should save a persons "ageVenus" as their venAge property', () => {
+        personOne.ageVenus(personOne.age);
+        expect(personOne.venAge).toEqual(personOne.ageVenus(personOne.age));
+    });
+
+
     test('it should correctly determine personOnes "ageMars" (age * 1.88)', () => {
         expect(personOne.ageMars(personOne.age)).toBeCloseTo(77.08);
     });
