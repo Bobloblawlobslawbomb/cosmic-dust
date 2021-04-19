@@ -20,6 +20,9 @@ ___
 >* _Babel_
 >* _String Theory_
 
+### Special Thanks to:
+_Min Chang, Seth Medeiros, Tiffany Greathead, Jeremy Banka, Nicholas Reeder, Isaac Moreno_ 
+___
 ## Setup/Installation Requirements
 1) Clone the repository: 'https://github.com/Bobloblawlobslawbomb/cosmic-dust'
 2) Navigate to the 'cosmic-dust/' directory on your computer
