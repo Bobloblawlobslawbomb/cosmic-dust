@@ -38,9 +38,8 @@ ___
 * Program currently does not return users "number of years past life expectancy"
   --planned as part of WIP timeLeft function
 * Person.js file is not written in class syntax
-* Program has 2 failing tests:
->1) _'it should save a persons "ageMercury" as their mercAge property'_
->2) _'it should calculate personOnes "timeLeft" (lifeExpect - age)'_
+* Program has 1 failing test:
+>1) _'it should calculate personOnes "timeLeft" (lifeExpect - age)'_
 
 ## License [GPL] (https://choosealicense.com/licenses/gpl-3.0/)
 _if you do run into any issues or have questions, ideas, or concerns; I would greatly encourage you to send feedback or make a contribution to the code_
