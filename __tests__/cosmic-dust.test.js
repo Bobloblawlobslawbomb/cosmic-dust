@@ -15,7 +15,7 @@ describe('Person', () => {
     test('it should correctly create a test person object with a new name and age', () => {
         testPerson = new Person('New Name', 35, 1);
         expect(testPerson.age).toEqual(35);
-    });
+    })
 
     test('it should correctly determine personOnes "ageMercury" (age * .24)', () => {
         expect(personOne.ageMercury(personOne.age)).toBeCloseTo(9.84);
@@ -34,7 +34,6 @@ describe('Person', () => {
         personOne.ageVenus(personOne.age);
         expect(personOne.venAge).toEqual(personOne.ageVenus(personOne.age));
     });
-
 
     test('it should correctly determine personOnes "ageMars" (age * 1.88)', () => {
         expect(personOne.ageMars(personOne.age)).toBeCloseTo(77.08);
