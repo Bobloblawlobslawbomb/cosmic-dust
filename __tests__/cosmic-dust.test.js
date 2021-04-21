@@ -49,7 +49,7 @@ describe('Person', () => {
     });
 
     test('it should calculate personOnes "timeLeft" (lifeExpect - age)', () => {
-        //why is this not a function?
+        
         expect(personOne.timeLeft()).toBeCloseTo(59);
     });
 
