@@ -13,22 +13,22 @@ export default class Person {
   }
 
   ageMercury(ageParam) {
-    this.mercAge = parseFloat(ageParam * .24);
+    this.mercAge = parseFloat(ageParam / .24);
     return this.mercAge;
     }
 
   ageVenus(ageParam) {
-    this.venAge = parseFloat(ageParam * .62);
+    this.venAge = parseFloat(ageParam / .62);
     return this.venAge;
     }
 
   ageMars(ageParam) {
-    this.marsAge = parseFloat(ageParam * 1.88);
+    this.marsAge = parseFloat(ageParam / 1.88);
     return this.marsAge;
     }
 
   ageJupiter(ageParam) {
-    this.jupAge = parseFloat(ageParam * 11.86);
+    this.jupAge = parseFloat(ageParam / 11.86);
     return this.jupAge;
     }
 

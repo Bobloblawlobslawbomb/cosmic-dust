@@ -17,8 +17,8 @@ describe('Person', () => {
         expect(testPerson.age).toEqual(35);
     })
 
-    test('it should correctly determine personOnes "ageMercury" (age * .24)', () => {
-        expect(personOne.ageMercury(personOne.age)).toBeCloseTo(9.84);
+    test('it should correctly determine personOnes "ageMercury" (age / .24)', () => {
+        expect(personOne.ageMercury(personOne.age)).toBeCloseTo(170.83);
     });
 
     test('it should save a persons "ageMercury" as their mercAge property', () => {
@@ -26,8 +26,8 @@ describe('Person', () => {
         expect(personOne.mercAge).toEqual(personOne.ageMercury(personOne.age));
     });
 
-    test('it should correctly determine personOnes "ageVenus" (age * .62)', () => {
-        expect(personOne.ageVenus(personOne.age)).toBeCloseTo(25.42);
+    test('it should correctly determine personOnes "ageVenus" (age / .62)', () => {
+        expect(personOne.ageVenus(personOne.age)).toBeCloseTo(66.13);
     });
 
     test('it should save a persons "ageVenus" as their venAge property', () => {
@@ -35,12 +35,12 @@ describe('Person', () => {
         expect(personOne.venAge).toEqual(personOne.ageVenus(personOne.age));
     });
 
-    test('it should correctly determine personOnes "ageMars" (age * 1.88)', () => {
-        expect(personOne.ageMars(personOne.age)).toBeCloseTo(77.08);
+    test('it should correctly determine personOnes "ageMars" (age / 1.88)', () => {
+        expect(personOne.ageMars(personOne.age)).toBeCloseTo(21.81);
     });
 
-    test('it should correctly determine personOnes "ageJupiter" (age * 11.86)', () => {
-        expect(personOne.ageJupiter(personOne.age)).toBeCloseTo(486.26);
+    test('it should correctly determine personOnes "ageJupiter" (age / 11.86)', () => {
+        expect(personOne.ageJupiter(personOne.age)).toBeCloseTo(3.46);
     });
 
     test('it should determine a persons "lifeExpectancy" ((numOfSnakes * .2) * avgLife)', () => {
