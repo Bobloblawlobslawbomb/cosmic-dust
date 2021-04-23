@@ -33,11 +33,15 @@ export default class Person {
   }
 
   lifeExpectancy() {
-    this.lifeExpect = ((this.numOfSnakes * .2) * this.avgLife)
+    this.lifeExpect = ((this.numOfSnakes * .2) * this.avgLife);
     return this.lifeExpect;
   }
 
-  lifeLeft() {
-    
+  lifeLeft(ageParam) {
+    this.timeLeft = (this.lifeExpect - ageParam);
+    return this.timeLeft;
   }
 }
+
+//this.timeLeft = this.lifeExpectancy - ageParam;
+//return this.timeLeft;

@@ -48,8 +48,7 @@ test('it should determine a persons "lifeExpectancy" ((numOfSnakes * .2) * avgLi
     expect(personOne.lifeExpectancy()).toBeCloseTo(60);
   });
 
- test('it should calculate personOnes "lifeLeft" (lifeExpect - age)', () => {
-    
-    expect(personOne.lifeLeft()).toBeCloseTo(59);
+test('it should calculate personOnes "lifeLeft" (lifeExpect - age)', () => {
+    expect(personOne.lifeLeft(personOne.age)).toBeCloseTo(59);
   });
 });
