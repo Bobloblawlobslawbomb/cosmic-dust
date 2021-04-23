@@ -10,34 +10,34 @@ export default class Person {
   this.jupAge = 0;
   this.lifeExpect = 100;
   this.timeLeft = 100;
-  }
+}
 
   ageMercury(ageParam) {
     this.mercAge = parseFloat(ageParam / .24);
     return this.mercAge;
-    }
+  }
 
   ageVenus(ageParam) {
     this.venAge = parseFloat(ageParam / .62);
     return this.venAge;
-    }
+  }
 
   ageMars(ageParam) {
     this.marsAge = parseFloat(ageParam / 1.88);
     return this.marsAge;
-    }
+  }
 
   ageJupiter(ageParam) {
     this.jupAge = parseFloat(ageParam / 11.86);
     return this.jupAge;
-    }
+  }
 
   lifeExpectancy() {
     this.lifeExpect = ((this.numOfSnakes * .2) * this.avgLife)
     return this.lifeExpect;
-    }
+  }
 
-  timeLeft() {
+  lifeLeft() {
     
-    }
+  }
 }
