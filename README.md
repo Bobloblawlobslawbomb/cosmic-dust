@@ -11,7 +11,6 @@ ___
 >* _CSS_
 >* _JavaScript_
 >* _JQuery_
->* _Environments_
 >* _TDD_
 >* _Node_
 >* _Webpack_
