@@ -36,10 +36,6 @@ ___
 
 ## Known Bugs
 * Program currently has no way to input 'Name, _Age_, or _Number of Snakes_'
-* Program currently does not return users "number of years past life expectancy"
-  --planned as part of WIP timeLeft function
-* Program has 1 failing test:
->1) _'it should calculate personOnes "timeLeft" (lifeExpect - age)'_
 
 ## License [GPL] (https://choosealicense.com/licenses/gpl-3.0/)
 _if you do run into any issues or have questions, ideas, or concerns; I would greatly encourage you to send feedback or make a contribution to the code_
