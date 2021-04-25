@@ -39,7 +39,7 @@ export default class Person {
 
   lifeLeft() {
     this.timeLeft = (this.lifeExpect - this.age);
-    if (this.timeLeft <= 0) {
+    if (this.timeLeft < 0) {
       return ("You have outlived your life expectancy by: " + Math.abs(this.timeLeft) + " years");
     } else {
     return this.timeLeft;
