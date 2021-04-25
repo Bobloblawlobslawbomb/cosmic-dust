@@ -9,26 +9,26 @@ export default class Person {
   this.marsAge = 0;
   this.jupAge = 0;
   this.lifeExpect = 100;
-  this.timeLeft = 100;
+  this.timeLeft = 0;
 }
 
-  ageMercury(ageParam) {
-    this.mercAge = parseFloat(ageParam / .24);
+  ageMercury() {
+    this.mercAge = parseFloat(this.age / .24);
     return this.mercAge;
   }
 
-  ageVenus(ageParam) {
-    this.venAge = parseFloat(ageParam / .62);
+  ageVenus() {
+    this.venAge = parseFloat(this.age / .62);
     return this.venAge;
   }
 
-  ageMars(ageParam) {
-    this.marsAge = parseFloat(ageParam / 1.88);
+  ageMars() {
+    this.marsAge = parseFloat(this.age / 1.88);
     return this.marsAge;
   }
 
-  ageJupiter(ageParam) {
-    this.jupAge = parseFloat(ageParam / 11.86);
+  ageJupiter() {
+    this.jupAge = parseFloat(this.age / 11.86);
     return this.jupAge;
   }
 
@@ -37,11 +37,12 @@ export default class Person {
     return this.lifeExpect;
   }
 
-  lifeLeft(ageParam) {
-    this.timeLeft = (this.lifeExpect - ageParam);
+  lifeLeft() {
+    this.timeLeft = (this.lifeExpect - this.age);
+    if (this.timeLeft <= 0) {
+      return ("You have outlived your life expectancy by: " + Math.abs(this.timeLeft) + " years");
+    } else {
     return this.timeLeft;
+    }
   }
 }
-
-//this.timeLeft = this.lifeExpectancy - ageParam;
-//return this.timeLeft;
